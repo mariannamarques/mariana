@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <img src="on.gif" alt="" id="lamp">
+    <button id="btn">DESLIGAR</button>
+
+
+    <script>
+        let lamp = document.getElementById('lamp')
+        let btn = document.getElementById('btn')
+        let desligar = true
+
+        btn.addEventListener('click', () => {
+            if (desligar) {
+                lamp.src = 'off.gif'
+                btn.innerHTML = 'Ligar'
+                desligar = false
+            } else {
+                lamp.src = 'on.gif'
+                btn.innerHTML = 'desligar'
+                desligar = true
+            }
+        })
+    </script>
+
+
+
+
+    <br>
+
+    <label for="senha">senha</label>
+    <input type="password" name="senha" id="senha">
+    <button id="btn1">Exibir</button>
+
+
+
+
+
+
+    <script>
+
+        let campo_senha = document.getElementById('senha')
+        let btn1 = document.getElementById('btn1')
+        exibir = true
+        btn1.addEventListener('click', ()=> {
+            if (exibir) {
+                campo_senha.type = 'text'
+                exibir = false
+            } else {
+                campo_senha.type = 'password'
+                exibir = true
+            }
+        })
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

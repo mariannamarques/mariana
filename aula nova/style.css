@@ -1,0 +1,14 @@
+.menu a {
+    display: flex;
+    margin: 10px;
+}
+
+.menu{
+    display: flex;
+justify-content: center;}
+body {
+
+    margin: 55px;
+
+    background-image: url(1.jpg)
+}
